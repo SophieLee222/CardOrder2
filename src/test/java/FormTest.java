@@ -63,8 +63,8 @@ public class FormTest {
 
     @Test
     void shouldChooseDateFromDropdownCalendar(){
-        String deliveryDate = generateDate(4, "d");
-        String deliveryFullDate = generateDate(4, "d.MM.yyyy");
+        String deliveryDate = generateDate(7, "d");
+        String deliveryFullDate = generateDate(7, "d.MM.yyyy");
 
         $("[data-test-id='city'] input").setValue("Екатеринбург");
         $("[data-test-id='date'] input").sendKeys(Keys.chord(SHIFT, HOME),Keys.BACK_SPACE);
